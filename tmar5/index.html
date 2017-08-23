@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AR 识别 Test</title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta name="apple-touch-fullscreen" content="yes"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+          name="viewport"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <script type="text/javascript" src="http://g.alicdn.com/hybrid/api/4.0.3/index.js"></script>
+    
+    <!-- <script type="text/javascript" src="./libs/three.js"></script> -->
+    <!-- <script type="text/javascript" src="./libs/ARObject.js"></script> -->
+
+    <script type="text/javascript" src="Zepto.js"></script>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            width: 100%;
+            background-color: #fff;
+            background: none;
+        }
+
+        html{
+            background: none;
+        }
+
+        h3{
+            color: red;
+        }
+
+        div {
+            font-family: arial;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        * {
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+
+        #container{
+            background: none;
+            background: transparent;
+        }
+
+        #reg{
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            width: 200px;
+            height: 50px;
+            line-height: 50px;
+            background: red;
+            color: white;
+        }
+
+        #refresh{
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            width: 80px;
+            height: 50px;
+            line-height: 50px;
+            background: green;
+            color: white;
+        }
+
+         #img{
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            background: black;
+            color: white;
+        }
+
+        #start_fq{
+            position: absolute;
+            top: 0px;
+            right: 40px;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            background: green;
+            color: white;
+        }
+
+        #start_fs{
+            position: absolute;
+            top: 0px;
+            right: 80px;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            background: green;
+            color: white;
+        }
+
+        #start_bq{
+            position: absolute;
+            top: 0px;
+            right: 120px;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            background: green;
+            color: white;
+        }
+
+        #stop{
+            position: absolute;
+            top: 0px;
+            right: 160px;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            background: red;
+            color: white;
+        }
+
+        #take_pic{
+            position: absolute;
+            top: 0px;
+            right: 200px;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            background: green;
+            color: white;
+        }
+
+        h3{
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="reg">
+        准备中
+    </div>
+    <div id="refresh" onclick="window.location.reload()">
+        refresh
+    </div>
+    <div id="img"">
+        img
+    </div>
+    <div id="stop">
+        stop
+    </div>
+    <div id="start_fq">
+        s_fq
+    </div>
+    <div id="start_fs">
+        s_fs
+    </div>
+    <div id="start_bq">
+        s_bq
+    </div>
+    <div id="take_pic">
+        frame
+    </div>
+</body>
+<script type="text/javascript" src="index.js"></script>
+
+</html>

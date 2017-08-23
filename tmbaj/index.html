@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AR 识别 Test</title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta name="apple-touch-fullscreen" content="yes"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+          name="viewport"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <script type="text/javascript" src="http://g.alicdn.com/hybrid/api/4.0.3/index.js"></script>
+    
+    <!-- <script type="text/javascript" src="./libs/three.js"></script> -->
+    <!-- <script type="text/javascript" src="./libs/ARObject.js"></script> -->
+
+    <script type="text/javascript" src="Zepto.js"></script>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            width: 100%;
+            background-color: #fff;
+            background: none;
+        }
+
+        html{
+            background: none;
+        }
+
+        h3{
+            color: red;
+        }
+
+        div {
+            font-family: arial;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        * {
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+
+        #container{
+            background: none;
+            background: transparent;
+        }
+
+
+        #startCamera{
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            width: 100px;
+            height: 40px;
+            line-height: 40px;
+            background: green;
+            color: white;
+        }
+
+        #stopCamera{
+            position: absolute;
+            top: 0px;
+            right: 110px;
+            width: 100px;
+            height: 40px;
+            line-height: 40px;
+            background: black;
+            color: white;
+        }
+
+        #faceCollect{
+            position: absolute;
+            top: 0px;
+            right: 220px;
+            width: 100px;
+            height: 40px;
+            line-height: 40px;
+            background: blue;
+            color: white;
+        }
+
+        h3{
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="startCamera">
+        startCamera
+    </div>
+    <div id="stopCamera"">
+        stopCamera
+    </div>
+    <div id="faceCollect"">
+        faceCollect
+    </div>
+</body>
+<script type="text/javascript" src="index.js"></script>
+
+</html>

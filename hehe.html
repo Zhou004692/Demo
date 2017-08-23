@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AR 识别 Test</title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta name="apple-touch-fullscreen" content="yes"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+          name="viewport"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <script type="text/javascript" src='http://g.alicdn.com/tmapp/animation-data/4.1.37/jc/tools/vconsole.min.js'></script>
+    <script type="text/javascript" src="newwindvane.js"></script>
+    
+    <script type="text/javascript" src="./libs/three.js"></script>
+    <script type="text/javascript" src="./libs/ARObject.js"></script>
+
+    <script type="text/javascript" src="hehe.js"></script>
+    <script type="text/javascript" src="intellogo.js"></script>
+    <script type="text/javascript" src="warcraft.js"></script>
+    <script type="text/javascript" src="rmb.js"></script>
+    <script type="text/javascript" src="coco.js?t=12"></script>
+    <script type="text/javascript" src="Zepto.js"></script>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            width: 100%;
+            background-color: #fff;
+            background: none;
+        }
+
+        html{
+            background: none;
+        }
+
+        h3{
+            color: red;
+        }
+
+        div {
+            font-family: arial;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        * {
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+
+        #container{
+            background: none;
+            background: transparent;
+        }
+
+        #reg{
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            width: 200px;
+            height: 50px;
+            line-height: 50px;
+            background: red;
+            color: white;
+        }
+
+        #refresh{
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            width: 80px;
+            height: 50px;
+            line-height: 50px;
+            background: green;
+            color: white;
+        }
+
+        #switch{
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            width: 80px;
+            height: 50px;
+            line-height: 50px;
+            background: blue;
+            color: white;
+        }
+
+        #newpage{
+            position: absolute;
+            top: 0px;
+            right: 80px;
+            width: 80px;
+            height: 50px;
+            line-height: 50px;
+            background: green;
+            color: white;
+        }
+
+        #collect img{
+            width: 80px;
+        }
+
+        h3{
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="collect">
+        <h3>选择候选识别图</h3>
+        <img id="tmall" src="//gw.alicdn.com/mt/TB1lAm6KXXXXXb6XXXXXXXXXXXX-478-255.png">
+        
+    </div>
+
+    <div id="reg">
+        准备中
+    </div>
+    <div id="refresh">
+        NEW
+    </div>
+    <div id="switch">
+        OLD
+    </div>
+    <div id="capture">
+        capture
+    </div>
+            <script>
+
+        var i = new Image();
+        i.crossOrigin = "anonymous";
+        i.onerror = function(e){
+            // alert("e" + e.toString());
+        }
+        i.onload = function(e){
+            document.body.appendChild(i);
+            // alert("s" + e.toString());
+        }
+        i.src = "//cx.alicdn.com/tmx/3733e9b707bc226f328a50d0075e790c.png?t=1"
+
+    </script>
+</body>
+
+</html>

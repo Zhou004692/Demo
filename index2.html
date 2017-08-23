@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AR 识别 Test</title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta name="apple-touch-fullscreen" content="yes"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+          name="viewport"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <script type="text/javascript" src="http://g.alicdn.com/hybrid/api/4.0.3/index.js"></script>
+    
+    <script type="text/javascript" src="./libs/three.js"></script>
+    <script type="text/javascript" src="./libs/ARObject.js"></script>
+
+    <script type="text/javascript" src="tmall.js"></script>
+    <script type="text/javascript" src="intellogo.js"></script>
+    <script type="text/javascript" src="warcraft.js"></script>
+    <script type="text/javascript" src="rmb.js"></script>
+    <script type="text/javascript" src="coco.js?t=12"></script>
+    <script type="text/javascript" src="Zepto.js"></script>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            width: 100%;
+            background-color: #fff;
+            background: none;
+        }
+
+        html{
+            background: none;
+        }
+
+        h3{
+            color: red;
+        }
+
+        div {
+            font-family: arial;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        * {
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+
+        #container{
+            background: none;
+            background: transparent;
+        }
+
+        #reg{
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            width: 200px;
+            height: 50px;
+            line-height: 50px;
+            background: red;
+            color: white;
+        }
+
+        #refresh{
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            width: 80px;
+            height: 50px;
+            line-height: 50px;
+            background: green;
+            color: white;
+        }
+
+        #switch{
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            width: 80px;
+            height: 50px;
+            line-height: 50px;
+            background: blue;
+            color: white;
+        }
+
+        #newpage{
+            position: absolute;
+            top: 0px;
+            right: 80px;
+            width: 80px;
+            height: 50px;
+            line-height: 50px;
+            background: green;
+            color: white;
+        }
+
+        #collect img{
+            width: 80px;
+        }
+
+        h3{
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="collect">
+        <h3>选择候选识别图</h3>
+        <img id="tmall" src="//gw.alicdn.com/mt/TB1lAm6KXXXXXb6XXXXXXXXXXXX-478-255.png">
+        <img id="intel" src="//gw.alicdn.com/mt/TB13Um9KXXXXXaHXXXXXXXXXXXX-202-201.jpg">
+        <img id="intel" src="//gw.alicdn.com/mt/TB1XVKWKXXXXXb.XpXXXXXXXXXX-202-201.jpg">
+        <img id="intel" src="//gw.alicdn.com/mt/TB1S55IKXXXXXaqXVXXXXXXXXXX-203-203.jpg">
+        <img id="intel" src="//gw.alicdn.com/mt/TB14Wq5KXXXXXcIXXXXXXXXXXXX-1024-1024.jpg">
+        <img id="warcraft" src="//gw.alicdn.com/mt/TB1OQc7KXXXXXbDXFXXXXXXXXXX-1024-1024.jpg">
+        <img id="rmb" src="//gw.alicdn.com/mt/TB1btJmKVXXXXcyXVXXXXXXXXXX-640-312.jpg">
+
+        <!-- coco.js 作为锚点 -->
+        <img id="coca" src="//gw.alicdn.com/mt/TB1n6kOLXXXXXc5XXXXXXXXXXXX-617-218.jpg">
+        <img id="binglu" src="//gw.alicdn.com/mt/TB1tLUKLXXXXXahXpXXXXXXXXXX-586-199.jpg">
+        
+    </div>
+
+    <div id="reg">
+        准备中
+    </div>
+    <div id="refresh" onclick="window.location.reload()">
+        刷新
+    </div>
+    <div id="switch">
+        切换摄像头
+    </div>
+    <div id="newpage">
+        打开详情
+    </div>
+</body>
+<script type="text/javascript" src="index2.js"></script>
+
+</html>
